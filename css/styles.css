@@ -1,0 +1,88 @@
+* {
+  font-family: fantasy !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(215, 115, 150);
+}
+
+header {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  height: fit-content;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+#top {
+  margin: 20px;
+}
+
+#smart_thumbnail {
+  animation: spin 4s linear infinite;
+}
+
+#title {
+  margin-left: 30px;
+  font-size: 80px;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+}
+
+li {
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+li a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: color 0.1s ease-in-out;
+}
+
+li a:hover {
+  color: pink !important;
+}
+
+#selected {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#about_me {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#gallery img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
